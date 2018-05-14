@@ -5,6 +5,8 @@ import NewToDo from './NewToDo';
 import InProgressToDo from './InProgressToDo';
 import CompletedToDo from './CompletedToDo';
 
+import NewToDoModal from '../modals/NewToDoModel';
+
 class App extends Component {
   render() {
     return (
@@ -24,7 +26,7 @@ class App extends Component {
   }
 
   handleAdd(){
-    
+    return <NewToDoModal show={true}/>
   }
 }
 
